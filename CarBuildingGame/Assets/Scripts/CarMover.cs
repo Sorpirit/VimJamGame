@@ -18,15 +18,19 @@ public class CarMover : MonoBehaviour
 
     private void Update()
     {
-        moveFactor = Input.GetAxisRaw("Vertical");
+        moveFactor = -Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
     {
-        if(drive != (moveFactor == 0f))
+        if(prevMoveFactor != moveFactor)
         {
-            drive = moveFactor == 0f;
-            UpdateWheelsState();
+            drive = moveFactor != 0f;
+
+            UpdateWheelsState(drive ? moveFactor : 1);
+
+
+            prevMoveFactor = moveFactor;
         }
 
         
@@ -36,9 +40,10 @@ public class CarMover : MonoBehaviour
     {
         foreach(WheelJoint2D wheel in motorWheels)
         {
-            wheel.useMotor = drive;
-            JointMotor2D newMotor = new JointMotor2D { motorSpeed = wheel.motor.motorSpeed * speedFactor, maxMotorTorque = wheel.motor.maxMotorTorque };
+            float speed = Mathf.Abs(wheel.motor.motorSpeed) * speedFactor;
+            JointMotor2D newMotor = new JointMotor2D {motorSpeed = speed, maxMotorTorque = wheel.motor.maxMotorTorque };
             wheel.motor = newMotor;
+            wheel.useMotor = drive;
         }
     }
 }
