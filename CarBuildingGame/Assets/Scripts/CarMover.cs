@@ -18,7 +18,7 @@ public class CarMover : MonoBehaviour
 
     private void Update()
     {
-        moveFactor = -Input.GetAxisRaw("Vertical");
+        moveFactor = -Input.GetAxisRaw("Horizontal");
     }
 
     private void FixedUpdate()
