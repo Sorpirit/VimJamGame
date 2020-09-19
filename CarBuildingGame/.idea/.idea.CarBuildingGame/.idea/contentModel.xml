@@ -5,6 +5,13 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Fonts" t="Include">
+          <e p="Normal" t="Include">
+            <e p="Architects_Daughter" t="Include">
+              <e p="OFL.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
             <e p="DOTween" t="Include">
@@ -22,6 +29,20 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CarEdit.cs" t="Include" />
+          <e p="CarPartButton.cs" t="Include" />
+          <e p="Controls" t="Include">
+            <e p="CarMover.cs" t="Include" />
+            <e p="RocketBusterControls.cs" t="Include" />
+          </e>
+          <e p="EditManager.cs" t="Include" />
+          <e p="EditParts" t="Include">
+            <e p="BasicPart.cs" t="Include" />
+            <e p="BasicWheel.cs" t="Include" />
+            <e p="RocketBusterEdit.cs" t="Include" />
+          </e>
+          <e p="IActiveComponent.cs" t="Include" />
+          <e p="ICarPart.cs" t="Include" />
           <e p="MainMenu" t="Include">
             <e p="FlyController.cs" t="Include" />
             <e p="killer.cs" t="Include" />
@@ -32,6 +53,8 @@
             <e p="AddWheels.cs" t="Include" />
             <e p="CarMover.cs" t="Include" />
           </e>
+          <e p="RocketJumper.cs" t="Include" />
+          <e p="SceneReset.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
