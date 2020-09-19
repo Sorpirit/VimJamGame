@@ -1382,57 +1382,5 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 579763907}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: cantPlace.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: cantPlace.g
-      value: 0.11698109
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: cantPlace.b
-      value: 0.11698109
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: cantPlace.a
-      value: 0.6392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: canPlace.r
-      value: 0.11764705
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: canPlace.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: canPlace.b
-      value: 0.24366102
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: canPlace.a
-      value: 0.6392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: higlited.r
-      value: 0.8207547
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: higlited.g
-      value: 0.80813426
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: higlited.b
-      value: 0.7696511
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: higlited.a
-      value: 0.5019608
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146693121766131637, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}
-      propertyPath: carMask.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7597611aa98daa043b600563bdcc1dee, type: 3}

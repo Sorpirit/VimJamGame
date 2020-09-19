@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8747012569336576789}
   - component: {fileID: 3219563832339391446}
   - component: {fileID: 3138721752927483783}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: WheelBig_Edit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -29,6 +29,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AddWheels.cs" t="Include" />
           <e p="CarEdit.cs" t="Include" />
           <e p="CarPartButton.cs" t="Include" />
           <e p="Controls" t="Include">
@@ -44,14 +45,12 @@
           <e p="IActiveComponent.cs" t="Include" />
           <e p="ICarPart.cs" t="Include" />
           <e p="MainMenu" t="Include">
+            <e p="ClipText.cs" t="Include" />
             <e p="FlyController.cs" t="Include" />
             <e p="killer.cs" t="Include" />
             <e p="MainMenuManager.cs" t="Include" />
             <e p="PlayButton.cs" t="Include" />
-          </e>
-          <e p="Movement" t="Include">
-            <e p="AddWheels.cs" t="Include" />
-            <e p="CarMover.cs" t="Include" />
+            <e p="textMove.cs" t="Include" />
           </e>
           <e p="RocketJumper.cs" t="Include" />
           <e p="SceneReset.cs" t="Include" />

@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 3761048176883834662}
   - component: {fileID: 6762391922153210029}
   - component: {fileID: 3470662890817430162}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: RocketJumper_Edit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
