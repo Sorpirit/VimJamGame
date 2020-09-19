@@ -131,10 +131,13 @@ public class CarEdit : MonoBehaviour
 
     public void AttachAllComponents()
     {
-        foreach(ICarPart part in carParts)
+        if (carParts != null)
         {
-            part.AttachPart(car);
-            part.DeletePart();
+            foreach(ICarPart part in carParts)
+            {
+                part.AttachPart(car);
+                part.DeletePart();
+            }
         }
     }
 }

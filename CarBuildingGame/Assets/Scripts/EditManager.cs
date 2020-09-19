@@ -1,55 +1,59 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EditManager : MonoBehaviour
 {
     [SerializeField] private GameObject car;
-    [SerializeField] private GameObject editPanel;
     [SerializeField] private CarEdit edit;
     [SerializeField] private bool autoStartEditing;
+    public delegate void MakeEdit();
+    public static event MakeEdit MakeEdditing;
 
     private bool isInEditingMode;
+    public bool EditingIsPossible;
+
+    //Experience is a basic property
+    public bool IsInEditingMode { get { return isInEditingMode; } }
 
     private void Start()
     {
         if (autoStartEditing)
-            StartEditing();
-    }
-
-    public void StartEditing()
-    {
-        car.GetComponent<Rigidbody2D>().isKinematic = true;
-        FreezeActiveComponents(true);
-
-        editPanel.SetActive(true);
-        edit.gameObject.SetActive(true);
-
-        isInEditingMode = true;
-    }
-
-    public void EndEditing()
-    {
-        car.GetComponent<Rigidbody2D>().isKinematic = false;
-        FreezeActiveComponents(false);
-
-        edit.Deselect();
-        edit.AttachAllComponents();
-
-        editPanel.SetActive(false);
-        edit.gameObject.SetActive(false);
-
-        isInEditingMode = false;
-    }
-
-    private void Update()
-    {
-        if (!isInEditingMode)
-            return;
-
-        if (Input.GetKeyDown(KeyCode.Space))
         {
-            EndEditing();
+            isInEditingMode = true;
+            StartOrEndEditing();
+        }
+        else
+        {
+            isInEditingMode = false;
+            StartOrEndEditing();
+        }
+        MakeEdditing += StartOrEndEditing;
+    }
+
+    public void StartOrEndEditing()
+    {
+        if (isInEditingMode) 
+        {
+            car.GetComponent<Rigidbody2D>().isKinematic = true;
+            FreezeActiveComponents(true);
+
+            edit.gameObject.SetActive(true);
+
+            isInEditingMode = false;
+        }
+        else
+        {
+            car.GetComponent<Rigidbody2D>().isKinematic = false;
+            FreezeActiveComponents(false);
+
+            edit.Deselect();
+            edit.AttachAllComponents();
+
+            edit.gameObject.SetActive(false);
+
+            isInEditingMode = true;
         }
     }
 

@@ -1,31 +1,49 @@
 fileFormatVersion: 2
-guid: cc17c3b23b0599b4489e22be27f37a03
+guid: 084be26ae14cb449a9ee9b81912df493
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7936274328459965788
-    second: carsbatch1_0
+      213: 6035934737152977496
+    second: carboi1_0
   - first:
-      213: -82132679595367904
-    second: carsbatch1_1
+      213: -7664051892250736090
+    second: carboi1_1
   - first:
-      213: 6363611707750573608
-    second: carsbatch1_2
+      213: -6275076783284159840
+    second: carboi1_2
   - first:
-      213: 6697431160682794161
-    second: carsbatch1_3
+      213: 1942905991468179748
+    second: carboi1_3
   - first:
-      213: -745834058263833167
-    second: carsbatch1_4
+      213: 3313317121077039222
+    second: carboi1_4
   - first:
-      213: -2914990928984722833
-    second: carsbatch1_5
+      213: 6294502472512844369
+    second: carboi1_5
   - first:
-      213: -6145041465375089003
-    second: carsbatch1_6
+      213: -559852692787552638
+    second: carboi1_6
   - first:
-      213: -8326677898893245690
-    second: carsbatch1_7
+      213: 8036364888164535072
+    second: carboi1_0
+  - first:
+      213: 4958527124221421830
+    second: carboi1_1
+  - first:
+      213: -369040017731061536
+    second: carboi1_2
+  - first:
+      213: 6118267319780098614
+    second: carboi1_3
+  - first:
+      213: 639619885458747462
+    second: carboi1_4
+  - first:
+      213: -3504430751976305630
+    second: carboi1_5
+  - first:
+      213: 6070633235172268982
+    second: carboi1_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,9 +88,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 75
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -99,6 +117,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -137,13 +167,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carsbatch1_0
+      name: carboi1_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 534
-        width: 388
-        height: 113
+        x: 723
+        y: 535
+        width: 86
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa8714eb80bcd190800000000000000
-      internalID: -7936274328459965788
+      spriteID: 02b087c8947e68f60800000000000000
+      internalID: 8036364888164535072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carsbatch1_1
+      name: carboi1_1
       rect:
         serializedVersion: 2
-        x: 703
-        y: 523
-        width: 388
-        height: 113
+        x: 878
+        y: 536
+        width: 40
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 022644853c43cdef0800000000000000
-      internalID: -82132679595367904
+      spriteID: 6096b58e52a30d440800000000000000
+      internalID: 4958527124221421830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carsbatch1_2
+      name: carboi1_2
       rect:
         serializedVersion: 2
-        x: 188
-        y: 359
-        width: 397
-        height: 113
+        x: 1011
+        y: 536
+        width: 56
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8266df0e127105850800000000000000
-      internalID: 6363611707750573608
+      spriteID: 0e87c332f08e0eaf0800000000000000
+      internalID: -369040017731061536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carsbatch1_3
+      name: carboi1_3
       rect:
         serializedVersion: 2
-        x: 704
-        y: 349
-        width: 388
-        height: 113
+        x: 173
+        y: 337
+        width: 415
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc4128f72e02fc50800000000000000
-      internalID: 6697431160682794161
+      spriteID: 632cf5c16b378e450800000000000000
+      internalID: 6118267319780098614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carsbatch1_4
+      name: carboi1_4
       rect:
         serializedVersion: 2
-        x: 215
-        y: 194
-        width: 388
-        height: 112
+        x: 716
+        y: 357
+        width: 415
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +265,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b5dbc720e346a5f0800000000000000
-      internalID: -745834058263833167
+      spriteID: 6407b00a5e260e800800000000000000
+      internalID: 639619885458747462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carsbatch1_5
+      name: carboi1_5
       rect:
         serializedVersion: 2
-        x: 718
+        x: 739
+        y: 202
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c4f706cc2cd5fc0800000000000000
+      internalID: -3504430751976305630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carboi1_6
+      rect:
+        serializedVersion: 2
+        x: 1011
         y: 197
-        width: 389
-        height: 113
+        width: 90
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,50 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f623162c13fdb87d0800000000000000
-      internalID: -2914990928984722833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carsbatch1_6
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 35
-        width: 388
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59e9546585d68baa0800000000000000
-      internalID: -6145041465375089003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carsbatch1_7
-      rect:
-        serializedVersion: 2
-        x: 717
-        y: 50
-        width: 389
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6034f5d4192b17c80800000000000000
-      internalID: -8326677898893245690
+      spriteID: 6bb9f1883c83f3450800000000000000
+      internalID: 6070633235172268982
       vertices: []
       indices: 
       edges: []
