@@ -77,6 +77,8 @@
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneReset.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/WheelBouncy.physicsMaterial2D" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/WheelBouncy.physicsMaterial2D.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Ground.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Ground.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/Ready/WheelStandart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/Ready/WheelStandart.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/PlayScene/WheelPart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/PlayScene/WheelPart.prefab" afterDir="false" />
@@ -96,7 +98,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/CarMover.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/CarMover.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
