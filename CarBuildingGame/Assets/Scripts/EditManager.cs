@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class EditManager : MonoBehaviour
@@ -8,9 +7,11 @@ public class EditManager : MonoBehaviour
     [SerializeField] private GameObject editPanel;
     [SerializeField] private CarEdit edit;
     [SerializeField] private bool autoStartEditing;
-
+    [SerializeField] private GameObject carPrefab;
     private bool isInEditingMode;
+    private bool rebuildCar;
 
+    public Action<GameObject> OnCarChenged;
     private void Start()
     {
         if (autoStartEditing)
@@ -19,7 +20,18 @@ public class EditManager : MonoBehaviour
 
     public void StartEditing()
     {
-        car.GetComponent<Rigidbody2D>().isKinematic = true;
+        if (rebuildCar)
+        {
+            Destroy(car);
+            car = Instantiate(carPrefab, Vector3.zero, Quaternion.identity, transform.parent);
+            OnCarChenged?.Invoke(car);
+        }
+
+
+        Rigidbody2D carRb = car.GetComponent<Rigidbody2D>();
+        carRb.isKinematic = true;
+        car.transform.position = Vector2.zero;
+
         FreezeActiveComponents(true);
 
         editPanel.SetActive(true);
@@ -40,16 +52,17 @@ public class EditManager : MonoBehaviour
         edit.gameObject.SetActive(false);
 
         isInEditingMode = false;
+        rebuildCar = true;
     }
 
     private void Update()
     {
-        if (!isInEditingMode)
-            return;
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            EndEditing();
+            if (isInEditingMode)
+                EndEditing();
+            else
+                StartEditing();
         }
     }
 

@@ -48,6 +48,7 @@ MonoBehaviour:
   editPanel: {fileID: 0}
   edit: {fileID: 6146693121766131637}
   autoStartEditing: 1
+  carPrefab: {fileID: 2989330338162183797, guid: 22b6c6c8d0f85374ea8c1d777deafe5e, type: 3}
 --- !u!1 &6146693121766131638
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,3 +114,4 @@ MonoBehaviour:
   carMask:
     serializedVersion: 2
     m_Bits: 512
+  edit: {fileID: 6146693121524274951}

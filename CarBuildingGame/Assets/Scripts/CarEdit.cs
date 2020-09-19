@@ -11,6 +11,7 @@ public class CarEdit : MonoBehaviour
     [SerializeField] private Color canPlace;
     [SerializeField] private Color higlited;
     [SerializeField] private LayerMask carMask;
+    [SerializeField] private EditManager edit;
 
     private GameObject selectedCarPart;
     private bool isDraged;
@@ -25,6 +26,7 @@ public class CarEdit : MonoBehaviour
     private void Start()
     {
         carParts = new List<ICarPart>();
+        edit.OnCarChenged += (car) => this.car = car;
     }
 
     private void Update()
@@ -134,7 +136,7 @@ public class CarEdit : MonoBehaviour
         foreach(ICarPart part in carParts)
         {
             part.AttachPart(car);
-            part.DeletePart();
+            //part.DeletePart();
         }
     }
 }
