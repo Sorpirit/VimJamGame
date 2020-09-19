@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarMover : MonoBehaviour
+public class CarMover : MonoBehaviour,IActiveComponent
 {
-    [SerializeField] private WheelJoint2D[] motorWheels;
+    [SerializeField] private List<WheelJoint2D> motorWheels;
 
     private float moveFactor;
     private float prevMoveFactor;
     private bool drive;
+
+    private bool isFrozen;
 
     private void Start()
     {
@@ -18,11 +20,17 @@ public class CarMover : MonoBehaviour
 
     private void Update()
     {
+        if (isFrozen)
+            return;
+
         moveFactor = -Input.GetAxisRaw("Horizontal");
     }
 
     private void FixedUpdate()
     {
+        if (isFrozen)
+            return;
+
         if(prevMoveFactor != moveFactor)
         {
             drive = moveFactor != 0f;
@@ -45,5 +53,15 @@ public class CarMover : MonoBehaviour
             wheel.motor = newMotor;
             wheel.useMotor = drive;
         }
+    }
+
+    public void AddMotorWheel(WheelJoint2D wheel)
+    {
+        motorWheels.Add(wheel);
+    }
+
+    public void Freeze(bool val)
+    {
+        isFrozen = val;
     }
 }
