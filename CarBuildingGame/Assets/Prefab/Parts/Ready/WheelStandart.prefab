@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 4935987114715364563}
   - component: {fileID: 4935987114715364556}
   - component: {fileID: 4935987114715364557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelStandart
   m_TagString: Untagged
   m_Icon: {fileID: 0}

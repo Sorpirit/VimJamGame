@@ -34,6 +34,7 @@ public class EditManager : MonoBehaviour
         FreezeActiveComponents(false);
 
         edit.Deselect();
+        edit.AttachAllComponents();
 
         editPanel.SetActive(false);
         edit.gameObject.SetActive(false);

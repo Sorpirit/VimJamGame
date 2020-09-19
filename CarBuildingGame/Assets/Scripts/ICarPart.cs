@@ -2,7 +2,11 @@
 
 public interface ICarPart
 {
-    void AddPart(Vector2 pos, GameObject carObj);
+    //void SetPartPosition(Vector2 pos);
+    void AttachPart(GameObject carObj);
 
-    //bool CastColider();
+    bool CastColider(ContactFilter2D filter);
+
+    void HighlightSprite(Color tint);
+    void DeletePart();
 }

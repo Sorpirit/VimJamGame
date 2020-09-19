@@ -6,6 +6,7 @@ public class RocketJumper : MonoBehaviour
 {
     [SerializeField] private float force;
     [SerializeField] private float rechargeTime;
+    [SerializeField] private SpriteRenderer partSprite;
 
     private float fireTimer;
 
@@ -22,5 +23,15 @@ public class RocketJumper : MonoBehaviour
 
         fireTimer = rechargeTime;
         carBody.AddForceAtPosition(transform.up * force, transform.position);
+    }
+
+    public void HighlightSprite(Color tint)
+    {
+        partSprite.color = tint;
+    }
+
+    public void DeletePart()
+    {
+        Destroy(gameObject);
     }
 }

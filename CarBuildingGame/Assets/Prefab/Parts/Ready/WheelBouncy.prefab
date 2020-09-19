@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1940939041155921896}
   - component: {fileID: 1940939041155921911}
   - component: {fileID: 1940939041155921910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelBouncy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

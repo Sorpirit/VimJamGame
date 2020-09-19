@@ -94,7 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8747012569336576789}
   - component: {fileID: 3219563832339391446}
-  m_Layer: 0
+  - component: {fileID: 3138721752927483783}
+  m_Layer: 8
   m_Name: WheelBig_Edit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,6 +133,24 @@ MonoBehaviour:
   wheelSuspention: 2
   wheelModel: {fileID: 5319747988897135407, guid: d24cbc7597c41aa4aa9245a7571664c0, type: 3}
   isMotorWheel: 1
+  partColider: {fileID: 3138721752927483783}
+  partSprite: {fileID: 1901164225974714793}
+--- !u!58 &3138721752927483783
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2393544238223175600}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
 --- !u!1 &5968570310571127277
 GameObject:
   m_ObjectHideFlags: 0

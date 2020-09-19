@@ -258,7 +258,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3073210072552391380}
   - component: {fileID: 9181623505350122007}
-  m_Layer: 0
+  - component: {fileID: 3964949194427751883}
+  m_Layer: 8
   m_Name: WheelBouncy_Edit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,3 +297,21 @@ MonoBehaviour:
   wheelSuspention: 3
   wheelModel: {fileID: 1940939041155921909, guid: 32f73c88fde11a8468df1558e668e818, type: 3}
   isMotorWheel: 1
+  partColider: {fileID: 3964949194427751883}
+  partSprite: {fileID: 5307447199987857512}
+--- !u!58 &3964949194427751883
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8282698179434255985}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.85

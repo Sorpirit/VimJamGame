@@ -15,7 +15,7 @@ public class RocketBusterControls : MonoBehaviour,IActiveComponent
         carBody = GetComponent<Rigidbody2D>();
         jumpers = new List<RocketJumper>();
 
-        isFrozen = true;
+        isFrozen = false;
     }
 
     private void Update()
@@ -44,6 +44,7 @@ public class RocketBusterControls : MonoBehaviour,IActiveComponent
 
     public void Freeze(bool val)
     {
+        Debug.Log("freeze");
         isFrozen = val;
     }
 }

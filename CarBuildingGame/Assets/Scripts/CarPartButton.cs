@@ -9,7 +9,6 @@ public class CarPartButton : MonoBehaviour
 
     public void PeekPart()
     {
-        Debug.Log("Peek");
         edit.Select(Instantiate(carPart,edit.transform));
     }
 }
