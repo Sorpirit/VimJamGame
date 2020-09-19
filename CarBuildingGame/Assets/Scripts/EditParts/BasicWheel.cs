@@ -8,7 +8,8 @@ public class BasicWheel : MonoBehaviour, ICarPart
     [SerializeField] private float wheelSuspention;
     [SerializeField] private GameObject wheelModel;
     [SerializeField] private bool isMotorWheel;
-     
+    [SerializeField] private Collider2D partColider; 
+
     public void AddPart(Vector2 pos, GameObject carObj)
     {
         WheelJoint2D joint = carObj.AddComponent<WheelJoint2D>();
