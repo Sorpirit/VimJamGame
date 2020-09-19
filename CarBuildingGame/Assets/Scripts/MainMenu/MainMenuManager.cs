@@ -36,9 +36,9 @@ public class MainMenuManager: MonoBehaviour
 
     IEnumerator waitForButton()
     {
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(1.45f);
         GameObject go = Instantiate(PlayButton);
-        yield return new WaitForSeconds(5.6f);
+        yield return new WaitForSeconds(5.55f);
         StartCoroutine(waitForButton());
         yield return new WaitForSeconds(10);
         Destroy(go);
@@ -48,6 +48,7 @@ public class MainMenuManager: MonoBehaviour
     {
         GameObject go = Instantiate(Fly, parent: MainPanel.transform);
         yield return new WaitForSeconds(7);
+        Destroy(go);
         StartCoroutine(waitForFly());
     }
 }
