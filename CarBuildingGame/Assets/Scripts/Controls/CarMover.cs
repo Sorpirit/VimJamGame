@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CarMover : MonoBehaviour,IActiveComponent
 {
     [SerializeField] private List<WheelJoint2D> motorWheels;
+    //[SerializeField] private GameManager gameManager;
 
     private float moveFactor;
     private float prevMoveFactor;
@@ -64,4 +66,18 @@ public class CarMover : MonoBehaviour,IActiveComponent
     {
         isFrozen = val;
     }
+/*
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "garageDoor")
+        {
+            gameManager.EnterNewGarage();
+        }
+    }
+    */
 }
+
+
+
+
+

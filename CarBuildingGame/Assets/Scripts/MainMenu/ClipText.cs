@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClipText : MonoBehaviour
 {
-    [SerializeField] private Transform follow;
+    public Transform follow;
 
     // Update is called once per frame
     void Update()

@@ -1,10 +1,10 @@
 ﻿using System;
+using Cinemachine;
 using UnityEngine;
 
 public class EditManager : MonoBehaviour
 {
     [SerializeField] private GameObject car;
-    [SerializeField] private GameObject editPanel;
     [SerializeField] private CarEdit edit;
     [SerializeField] private bool autoStartEditing;
     [SerializeField] private GameObject carPrefab;
@@ -12,10 +12,11 @@ public class EditManager : MonoBehaviour
     private bool rebuildCar;
 
     public bool IsInEditingMode => isInEditingMode;
-
+    public bool ModeChangesOnSpaceBar = true;
     public Action OnEnterEditing;
     public Action OnExitEditing;
     public Action<GameObject> OnCarChenged;
+    public Transform GaragePlaceholder;
 
     private void Start()
     {
@@ -35,11 +36,10 @@ public class EditManager : MonoBehaviour
 
         Rigidbody2D carRb = car.GetComponent<Rigidbody2D>();
         carRb.isKinematic = true;
-        car.transform.position = Vector2.zero;
+        car.transform.position = GaragePlaceholder.transform.position;
 
         FreezeActiveComponents(true);
 
-        editPanel.SetActive(true);
         edit.gameObject.SetActive(true);
 
         isInEditingMode = true;
@@ -53,7 +53,6 @@ public class EditManager : MonoBehaviour
         edit.Deselect();
         edit.AttachAllComponents();
 
-        editPanel.SetActive(false);
         edit.gameObject.SetActive(false);
 
         isInEditingMode = false;
@@ -63,12 +62,15 @@ public class EditManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (ModeChangesOnSpaceBar)
         {
-            if (isInEditingMode)
-                EndEditing();
-            else
-                StartEditing();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (isInEditingMode)
+                    EndEditing();
+                else
+                    StartEditing();
+            }
         }
     }
 

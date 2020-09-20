@@ -32,6 +32,7 @@
           <e p="AddWheels.cs" t="Include" />
           <e p="CarEdit.cs" t="Include" />
           <e p="CarPartButton.cs" t="Include" />
+          <e p="CinemachinTargetChenger.cs" t="Include" />
           <e p="Controls" t="Include">
             <e p="CarMover.cs" t="Include" />
             <e p="RocketBusterControls.cs" t="Include" />
