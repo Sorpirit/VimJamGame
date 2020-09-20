@@ -6,6 +6,11 @@ TagManager:
   tags:
   - hat
   - garageDoor
+  - bigWheel
+  - standardWheel
+  - smallWheel
+  - bounceWheel
+  - rocketJumper
   layers:
   - Default
   - TransparentFX
