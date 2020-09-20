@@ -27,6 +27,7 @@ public class CarEdit : MonoBehaviour
     {
         carParts = new List<ICarPart>();
         edit.OnCarChenged += (car) => this.car = car;
+
     }
 
     private void Update()
@@ -133,10 +134,12 @@ public class CarEdit : MonoBehaviour
 
     public void AttachAllComponents()
     {
-        foreach(ICarPart part in carParts)
+        if (carParts != null)
         {
-            part.AttachPart(car);
-            //part.DeletePart();
+            foreach(ICarPart part in carParts)
+            {
+                part.AttachPart(car);
+            }
         }
     }
 }

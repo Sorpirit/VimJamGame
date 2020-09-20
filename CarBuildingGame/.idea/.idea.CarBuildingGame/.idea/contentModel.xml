@@ -52,6 +52,10 @@
             <e p="PlayButton.cs" t="Include" />
             <e p="textMove.cs" t="Include" />
           </e>
+          <e p="PlayScene" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+          </e>
           <e p="RocketJumper.cs" t="Include" />
           <e p="SceneReset.cs" t="Include" />
         </e>

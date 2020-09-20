@@ -11,7 +11,12 @@ public class EditManager : MonoBehaviour
     private bool isInEditingMode;
     private bool rebuildCar;
 
+    public bool IsInEditingMode => isInEditingMode;
+
+    public Action OnEnterEditing;
+    public Action OnExitEditing;
     public Action<GameObject> OnCarChenged;
+
     private void Start()
     {
         if (autoStartEditing)
@@ -38,8 +43,8 @@ public class EditManager : MonoBehaviour
         edit.gameObject.SetActive(true);
 
         isInEditingMode = true;
+        OnEnterEditing?.Invoke();
     }
-
     public void EndEditing()
     {
         car.GetComponent<Rigidbody2D>().isKinematic = false;
@@ -53,6 +58,7 @@ public class EditManager : MonoBehaviour
 
         isInEditingMode = false;
         rebuildCar = true;
+        OnExitEditing?.Invoke();
     }
 
     private void Update()

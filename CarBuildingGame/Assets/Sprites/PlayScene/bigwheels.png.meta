@@ -1,55 +1,61 @@
 fileFormatVersion: 2
-guid: beafb1477a3c9924395c6b84f885829b
+guid: 142a52314899d4259bf2b0b212c7e165
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6764284794233012578
-    second: wheelset1_0
+      213: 3467890634717590335
+    second: bigwheels_0
   - first:
-      213: 181847398493785381
-    second: wheelset1_1
+      213: -8699989007721412356
+    second: bigwheels_1
   - first:
-      213: 7190792421506527823
-    second: wheelset1_2
+      213: 2954467479759143450
+    second: bigwheels_2
   - first:
-      213: -5533939446454721895
-    second: wheelset1_3
+      213: -916455798999806787
+    second: bigwheels_3
   - first:
-      213: 8287891615947281362
-    second: wheelset1_4
+      213: -2666278328307426721
+    second: bigwheels_4
   - first:
-      213: -928359345377403589
-    second: wheelset1_5
+      213: 1251128076071013986
+    second: bigwheels_5
   - first:
-      213: -6790723650025930495
-    second: wheelset1_6
+      213: 1687451077479259813
+    second: bigwheels_6
   - first:
-      213: 7111952048222481115
-    second: wheelset1_7
+      213: 4224248545993745499
+    second: bigwheels_7
   - first:
-      213: 374514292041684457
-    second: wheelset1_8
+      213: 6223851946359532572
+    second: bigwheels_8
   - first:
-      213: 3200116479007317120
-    second: wheelset1_9
+      213: -8823171871473923053
+    second: bigwheels_0
   - first:
-      213: 511864341964497563
-    second: wheelset1_10
+      213: -6041592460839190896
+    second: bigwheels_1
   - first:
-      213: -2662290522935877180
-    second: wheelset1_11
+      213: 5347476425200684321
+    second: bigwheels_2
   - first:
-      213: 3200566634718704093
-    second: wheelset1_12
+      213: 3781777011915644642
+    second: bigwheels_3
   - first:
-      213: -3257939587035057144
-    second: wheelset1_13
+      213: 1979813286838283862
+    second: bigwheels_4
   - first:
-      213: 1946184386127731848
-    second: wheelset1_14
+      213: -7460159533696889501
+    second: bigwheels_5
   - first:
-      213: 6757706767849246235
-    second: wheelset1_15
+      213: 919962309167415361
+    second: bigwheels_6
+  - first:
+      213: 1878809590624031106
+    second: bigwheels_7
+  - first:
+      213: -8344167760736334464
+    second: bigwheels_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,6 +140,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -161,13 +179,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wheelset1_0
+      name: bigwheels_0
       rect:
         serializedVersion: 2
-        x: 164
-        y: 541
-        width: 86
-        height: 89
+        x: 462
+        y: 901
+        width: 139
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 261c5df7e219fdd50800000000000000
-      internalID: 6764284794233012578
+      spriteID: 31c04981eebcd8580800000000000000
+      internalID: -8823171871473923053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_1
+      name: bigwheels_1
       rect:
         serializedVersion: 2
-        x: 417
-        y: 536
-        width: 85
-        height: 79
+        x: 867
+        y: 880
+        width: 139
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52d0d86de3d068200800000000000000
-      internalID: 181847398493785381
+      spriteID: 09e7006aaa3f72ca0800000000000000
+      internalID: -6041592460839190896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_2
+      name: bigwheels_2
       rect:
         serializedVersion: 2
-        x: 617
-        y: 521
-        width: 86
-        height: 90
+        x: 1145
+        y: 853
+        width: 179
+        height: 178
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f42b771eb93dac360800000000000000
-      internalID: 7190792421506527823
+      spriteID: 12dccd00a7d063a40800000000000000
+      internalID: 5347476425200684321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_3
+      name: bigwheels_3
       rect:
         serializedVersion: 2
-        x: 871
-        y: 516
-        width: 85
-        height: 79
+        x: 462
+        y: 630
+        width: 139
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9926b8db46f7333b0800000000000000
-      internalID: -5533939446454721895
+      spriteID: 2ee58f6d7229b7430800000000000000
+      internalID: 3781777011915644642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_4
+      name: bigwheels_4
       rect:
         serializedVersion: 2
-        x: 164
-        y: 369
-        width: 86
-        height: 90
+        x: 867
+        y: 615
+        width: 139
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d3d9797381840370800000000000000
-      internalID: 8287891615947281362
+      spriteID: 65e2893e1b5b97b10800000000000000
+      internalID: 1979813286838283862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_5
+      name: bigwheels_5
       rect:
         serializedVersion: 2
-        x: 417
-        y: 364
-        width: 85
-        height: 80
+        x: 470
+        y: 352
+        width: 139
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,20 +298,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3d9dd2181ecd13f0800000000000000
-      internalID: -928359345377403589
+      spriteID: 36dc0420e60387890800000000000000
+      internalID: -7460159533696889501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_6
+      name: bigwheels_6
       rect:
         serializedVersion: 2
-        x: 617
-        y: 359
-        width: 86
-        height: 89
+        x: 881
+        y: 432
+        width: 138
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +319,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1014c50b1d082c1a0800000000000000
-      internalID: -6790723650025930495
+      spriteID: 1400ca498dc54cc00800000000000000
+      internalID: 919962309167415361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_7
+      name: bigwheels_7
       rect:
         serializedVersion: 2
-        x: 871
-        y: 354
-        width: 85
-        height: 80
+        x: 493
+        y: 149
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +340,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdaa9e505bab2b260800000000000000
-      internalID: 7111952048222481115
+      spriteID: 2811eb94e5fd21a10800000000000000
+      internalID: 1878809590624031106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wheelset1_8
+      name: bigwheels_8
       rect:
         serializedVersion: 2
-        x: 168
-        y: 194
-        width: 86
-        height: 89
+        x: 881
+        y: 133
+        width: 139
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,155 +361,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e5937ca3ca823500800000000000000
-      internalID: 374514292041684457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheelset1_9
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 188
-        width: 85
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08cda139bf8196c20800000000000000
-      internalID: 3200116479007317120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheelset1_10
-      rect:
-        serializedVersion: 2
-        x: 625
-        y: 247
-        width: 86
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b92abf338e18a1700800000000000000
-      internalID: 511864341964497563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheelset1_11
-      rect:
-        serializedVersion: 2
-        x: 879
-        y: 242
-        width: 84
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c1a483ffd4ad0bd0800000000000000
-      internalID: -2662290522935877180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheelset1_12
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 65
-        width: 86
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd1306e9562ba6c20800000000000000
-      internalID: 3200566634718704093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheelset1_13
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 59
-        width: 85
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 804b717f43979c2d0800000000000000
-      internalID: -3257939587035057144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheelset1_14
-      rect:
-        serializedVersion: 2
-        x: 625
-        y: 65
-        width: 86
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88c1e8a436c320b10800000000000000
-      internalID: 1946184386127731848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wheelset1_15
-      rect:
-        serializedVersion: 2
-        x: 879
-        y: 59
-        width: 85
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1e48e1608238cd50800000000000000
-      internalID: 6757706767849246235
+      spriteID: 08d4b0381af833c80800000000000000
+      internalID: -8344167760736334464
       vertices: []
       indices: 
       edges: []
