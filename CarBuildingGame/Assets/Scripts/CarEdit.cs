@@ -79,7 +79,7 @@ public class CarEdit : MonoBehaviour
                     lastHiglited = null;
                     lastHiglitedColider = null;
                 }
-                else if (Input.GetMouseButtonDown(1))
+                else if (Input.GetMouseButtonUp(1))
                 {
                     carParts.Remove(lastHiglited);
                     lastHiglited.DeletePart();

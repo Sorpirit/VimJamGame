@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using Cinemachine;
 using UnityEngine;
 
@@ -36,7 +36,7 @@ public class EditManager : MonoBehaviour
 
         Rigidbody2D carRb = car.GetComponent<Rigidbody2D>();
         carRb.isKinematic = true;
-        car.transform.position = GaragePlaceholder.transform.position;
+        car.transform.position = Vector3.zero;
 
         FreezeActiveComponents(true);
 
