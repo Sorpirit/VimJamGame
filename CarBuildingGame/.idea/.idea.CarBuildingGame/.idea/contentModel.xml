@@ -45,6 +45,7 @@
           </e>
           <e p="IActiveComponent.cs" t="Include" />
           <e p="ICarPart.cs" t="Include" />
+          <e p="Inventory.cs" t="Include" />
           <e p="MainMenu" t="Include">
             <e p="ClipText.cs" t="Include" />
             <e p="FlyController.cs" t="Include" />
@@ -53,6 +54,7 @@
             <e p="PlayButton.cs" t="Include" />
             <e p="textMove.cs" t="Include" />
           </e>
+          <e p="PickUp.cs" t="Include" />
           <e p="PlayScene" t="Include">
             <e p="CameraFollow.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />

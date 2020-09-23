@@ -36,7 +36,7 @@ public class EditManager : MonoBehaviour
 
         Rigidbody2D carRb = car.GetComponent<Rigidbody2D>();
         carRb.isKinematic = true;
-        car.transform.position = Vector3.zero;
+        car.transform.position = GaragePlaceholder.transform.position;
 
         FreezeActiveComponents(true);
 

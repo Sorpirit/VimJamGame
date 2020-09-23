@@ -29,36 +29,39 @@ public class GameManager : MonoBehaviour
     public List<GameObject> Components;
     private int Currentgarage;
     private List<Transform> Plceholders;
-
-    [HideInInspector] public List<int> availablePlaceholders;
-    private List<int> BackupAvailablePlaceholders;
     public bool DebugMode;
+    
     private bool CurrentlyDragingAComponentFromTheMenu;
     private bool AreEditButtonsDown;
     private bool PutDownCarComponentForTheFirstTime;
+    private List<Transform> AvalblePlaceholders;
     
     // Temp Variables !!don't mess with this!!
     private List<GameObject> TempGameObjectsOnCar;
     private List<GameObject> TempGameObjectsOnCa2;
     
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        PutDownCarComponentForTheFirstTime = true;
         TempGameObjectsOnCa2 = new List<GameObject>();
         TempGameObjectsOnCar = new List<GameObject>();
         ComponentNum = new List<int>();
-        Currentgarage = 0;
-        EnterNewGarage();
         foreach (GameObject comp in Components)
         {
-            ComponentNum.Add(0);
+            ComponentNum.Add(1);
         }
+        EnterNewGarage();
+        
+    }
+
+    void Start()
+    {
+        PutDownCarComponentForTheFirstTime = true;
+        Currentgarage = 0;
         DOTween.Init();
         editManager.OnEnterEditing += OpenEditMode;
         editManager.OnExitEditing += CloseEditMode;
         OpenScene();
-        AddToComponents(3, 2);
     }
 
     // Update is called once per frame
@@ -85,16 +88,6 @@ public class GameManager : MonoBehaviour
                     print(hit.transform.gameObject.name);
                 }
             }
-            if (Input.GetKeyUp(KeyCode.Mouse0))
-            {
-                WhenComponentAdded();
-                if (CurrentlyDragingAComponentFromTheMenu)
-                {
-                    AreEditButtonsDown = false;
-                    CurrentlyDragingAComponentFromTheMenu = false;
-                    OpenEditMode();
-                }
-            }
             if (CurrentlyDragingAComponentFromTheMenu)
             {
                 if (!AreEditButtonsDown)
@@ -104,6 +97,21 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void LateUpdate()
+    {
+        if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            WhenComponentAdded();
+            if (CurrentlyDragingAComponentFromTheMenu)
+            {
+                AreEditButtonsDown = false;
+                CurrentlyDragingAComponentFromTheMenu = false;
+                OpenEditMode();
+            }
+        }
+        
     }
 
     void OpenScene()
@@ -123,15 +131,17 @@ public class GameManager : MonoBehaviour
 
     void OpenEditMode()
     {
-        
-        foreach (int Component in ComponentNum)
+        int i = 0;
+        foreach (GameObject Component in Components)
         {
-            if (Component >= 1)
+            if (ComponentNum[i] >= 1)
             {
-                StartCoroutine(makeCarPartButton(spawnAndDespawnUIElementsInGarageSpeed, Components[ComponentNum.IndexOf(Component)]));
+                StartCoroutine(makeCarPartButton(spawnAndDespawnUIElementsInGarageSpeed, Component));
             }
+
+            i += 1;
         }
-        
+
     }
 
     void CloseEditMode()
@@ -143,25 +153,16 @@ public class GameManager : MonoBehaviour
                 StartCoroutine(deleteCarPartButton(t.gameObject, spawnAndDespawnUIElementsInGarageSpeed));
             }
         }
-
-        availablePlaceholders = BackupAvailablePlaceholders;
     }
 
     public void EnterNewGarage()
     {
-        Plceholders = new List<Transform>();
+        AvalblePlaceholders = new List<Transform>();
+        AvalblePlaceholders.RemoveRange(0, AvalblePlaceholders.Count);
         foreach (Transform holder in PlceholderPanels[Currentgarage].transform)
         {
-            Plceholders.Add(holder);
-        }
-
-        foreach (Transform holder in Plceholders)
-        {
-            BackupAvailablePlaceholders = new List<int>();
-            availablePlaceholders.Add(Plceholders.IndexOf(holder));
-            BackupAvailablePlaceholders.Add(Plceholders.IndexOf(holder));
-            if(DebugMode)
-                Debug.Log(Plceholders.IndexOf(holder));
+            AvalblePlaceholders.Add(holder);
+            holder.gameObject.name = "Placeholder";
         }
         Currentgarage += 1;
         
@@ -176,6 +177,8 @@ public class GameManager : MonoBehaviour
     private void WhenComponentAdded()
     {
         TempGameObjectsOnCar = new List<GameObject>();
+        TempGameObjectsOnCar.RemoveRange(0, TempGameObjectsOnCar.Count);
+        
         foreach (Transform t in CarEdit.gameObject.transform)
         {
             TempGameObjectsOnCar.Add(t.gameObject);
@@ -186,20 +189,19 @@ public class GameManager : MonoBehaviour
             TempGameObjectsOnCar.Remove(ga);
         }
 
-        foreach (GameObject go in Components)
+        if (TempGameObjectsOnCar.Count == 1)
         {
-            foreach (GameObject goo in TempGameObjectsOnCar)
+            foreach (GameObject go in Components)
             {
-                if (go.name == goo.name.Replace("(Clone)", ""))
+                if (go.name == TempGameObjectsOnCar[0].name.Replace("(Clone)", ""))
                 {
                     ComponentNum[Components.IndexOf(go)] -= 1;
-                    AddToComponents(ComponentNum[Components.IndexOf(go)], -1);
                 }
-                
             }
         }
-        
+
         TempGameObjectsOnCa2 = new List<GameObject>();
+        TempGameObjectsOnCar.RemoveRange(0, TempGameObjectsOnCar.Count);
         foreach (Transform t in CarEdit.gameObject.transform)
         {
             TempGameObjectsOnCa2.Add(t.gameObject);
@@ -227,16 +229,21 @@ public class GameManager : MonoBehaviour
 
     IEnumerator makeCarPartButton(float time, GameObject comp)
     {
-        
-        int randomNum = Random.Range(0, availablePlaceholders.Count);
-        int randomNumReal = availablePlaceholders[randomNum];
+        List<Transform> APlace = new List<Transform>();
+        APlace.RemoveRange(0, APlace.Count);
+        foreach (Transform t in AvalblePlaceholders)
+        {
+            if(t.gameObject.name == "Placeholder")
+                APlace.Add(t);
+        }
+        int randomNum = Random.Range(0, APlace.Count);
         GameObject go = Instantiate(CarPartButton,MainPanel.transform);
         
         go.GetComponent<Image>().sprite = comp.GetComponentInChildren<SpriteRenderer>().sprite;
         go.GetComponentInChildren<TextMeshProUGUI>().text = ComponentNum[Components.IndexOf(comp)].ToString();
         
-        go.GetComponent<ClipText>().follow = Plceholders[randomNumReal];
-        availablePlaceholders.Remove(randomNum);
+        go.GetComponent<ClipText>().follow = APlace[randomNum];
+        APlace[randomNum].gameObject.name = "Placeholder Occupied";
         go.transform.localScale = new Vector3(0,0,0);
         go.transform.DOScale(new Vector3(1, 1, 1), time);
         go.GetComponent<CanvasGroup>().DOFade(1, time);
@@ -246,23 +253,9 @@ public class GameManager : MonoBehaviour
         if(DebugMode)
             Debug.Log("Component button element has been spawned");
     }
-    IEnumerator makeUIElementForGarage( GameObject MyElement,float time)
-    {
-        int randomNum = Random.Range(0, availablePlaceholders.Count);
-        int randomNumReal = availablePlaceholders[randomNum];
-        GameObject go = Instantiate(MyElement,MainPanel.transform);
-        go.GetComponent<ClipText>().follow = Plceholders[randomNumReal];
-        availablePlaceholders.Remove(randomNum);
-        go.GetComponent<CanvasGroup>().alpha = 0;
-        go.transform.localScale = new Vector3(0,0,0);
-        go.transform.DOScale(new Vector3(1, 1, 1), time);
-        go.GetComponent<CanvasGroup>().DOFade(1, time);
-        yield return new WaitForSeconds(time);
-        if(DebugMode)
-            Debug.Log("UI garage element has been spawned");
-    }
     IEnumerator deleteCarPartButton(GameObject go, float time)
     {
+        go.GetComponent<ClipText>().follow.gameObject.name = "Placeholder";
         go.transform.DOScale(new Vector3(0, 0, 0), time);
         go.GetComponent<CanvasGroup>().DOFade(0, time);
         yield return new WaitForSeconds(time);

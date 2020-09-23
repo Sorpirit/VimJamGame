@@ -21,13 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="9c8f0226-6d46-4811-a032-b389ae81544d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarBuildingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/CarPartButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/CarPartButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelBig_Edit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelBig_Edit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelBouncy_Edit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelBouncy_Edit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelSmall_Edit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelSmall_Edit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelStandart_Edit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/Edit/WheelStandart_Edit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/BigWheel pickUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/BigWheel pickUp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/BounceWheel pickUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/BounceWheel pickUp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/RocketJumper pickUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/RocketJumper pickUp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/SmallWheel pickUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/SmallWheel pickUp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/Standartwheel pickUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Parts/PickUp/Standartwheel pickUp.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarPartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarPartButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controls/CarMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controls/CarMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestTerain.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestTerain.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EditManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu/ClipText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu/ClipText.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayScene/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayScene/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,11 +67,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CarEdit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/ClipText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EditManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/GarageDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/Gdoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controls/CarMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CarPartButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EditManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayScene/GameManager.cs" />
       </list>
     </option>
@@ -110,6 +117,8 @@
       <updated>1600512196898</updated>
       <workItem from="1600512203773" duration="8775000" />
       <workItem from="1600541020598" duration="3547000" />
+      <workItem from="1600728168271" duration="2598000" />
+      <workItem from="1600791262432" duration="3593000" />
     </task>
     <servers />
   </component>
@@ -134,9 +143,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="943" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1600545817813">
+    <state x="943" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1600877534811">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="943" y="329" width="672" height="678" key="search.everywhere.popup/-1366.1160.1366.1024/0.0.2560.1440@0.0.2560.1440" timestamp="1600545817813" />
+    <state x="943" y="329" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1600877534811" />
   </component>
 </project>
